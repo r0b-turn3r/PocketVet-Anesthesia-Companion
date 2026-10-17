@@ -5,7 +5,7 @@ const recoveryGroups={
 };
 let recoveryChecked=new Set(),recoveryNotes='',recoveryTimes={end:'',extubation:'',handoff:''};
 let monitoringRows=[],rowId=0,monitorMeta={procedure:'',clinician:'',date:''};
-const columns=[['time','Time','time',''],['day','Day offset','number','0 = record date'],['phase','Phase','phase',''],['hr','HR','number','bpm'],['rr','RR','number','/min'],['spo2','SpO₂','number','%'],['etco2','ETCO₂','number','mmHg'],['sap','SAP','number','mmHg'],['map','MAP','number','mmHg'],['dap','DAP','number','mmHg'],['temp','Temp','number','°C'],['inhalant','Inhalant','number','%'],['fluids','Fluids','number','mL/hr'],['notes','Assessment / interventions','text','']];
+const columns=[['time','Time','time',''],['day','Day offset','number','0 = record date'],['phase','Phase','phase',''],['hr','HR','number','bpm'],['rr','RR','number','/min'],['spo2','SpO₂','number','%'],['etco2','ETCO₂','number','mmHg'],['sap','SAP','number','mmHg'],['dap','DAP','number','mmHg'],['map','MAP','number','mmHg'],['temp','Temp','number','°C'],['inhalant','Inhalant','number','%'],['fluids','Fluids','number','mL/hr'],['notes','Assessment / interventions','text','']];
 const escapeHtml=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function localTime(){const d=new Date();return String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0')}
 function addMonitoringRow(){const r={id:++rowId,time:localTime(),day:'0',phase:'Maintenance'};columns.forEach(([key])=>{if(!(key in r))r[key]=''});monitoringRows.push(r);return r}
