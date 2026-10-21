@@ -2,6 +2,7 @@
 // Label strengths establish formulation, not prevalence or a treatment recommendation.
 const labelUrl=id=>'https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid='+id;
 const concentrationDefaults={
+  Esmolol:[10,'mg','f0a56c07-8f0f-4499-8d00-f13a966bf988','10 mg/mL reference injection. Other strengths and concentrates differ; verify actual preparation.'],
   Epinephrine:[1,'mg','79ca73ca-d3c0-40af-9dec-e2f4ce669cda','Stock vial. 0.1 mg/mL syringes also exist; use actual preparation strength.'],
   Vasopressin:[20,'U','52324969-4536-2b7c-e063-6394a90a9b4d','Stock concentrate; diluted infusion products have different strengths.'],
   Atropine:[.54,'mg','408c06b2-4f96-4ea2-9d33-2b148fd01884','Veterinary vial; 0.4 mg/mL and other strengths also exist.'],
