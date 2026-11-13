@@ -1,6 +1,6 @@
 Pocket Vet
 
-Pocket Vet is a collection of veterinary reference tools for canine and feline care. It includes separate applications for anesthesia and ophthalmology.
+Pocket Vet is a collection of veterinary reference tools for canine and feline care. It includes separate applications for anesthesia.
 
 Status: Clinical prototypes. Veterinary review and validation are required before patient-care use.
 
